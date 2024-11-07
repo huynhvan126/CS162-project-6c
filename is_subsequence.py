@@ -14,5 +14,6 @@ def is_subsequence(str1, str2):
     # Check if 1st characters match. If yes, continue searching in the remaining str2.
     if str1[0] == str2[0]:
         return is_subsequence(str1[1:], str2[1:])
-    # If 1st character don't match, continue searching
-    return is_subsequence(str1, str2[1:])
+    else:
+        # If 1st character don't match, continue searching
+        return is_subsequence(str1, str2[1:])
